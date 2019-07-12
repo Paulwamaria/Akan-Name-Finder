@@ -51,4 +51,21 @@ document.write(dayName[i]);
 }
 }
 convertD();
+//A function to match day with Akan name
+var male=false;
+var female=true;
+var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+var femNames=["Akosua","Adwoa","Abena","Akua","Yaa","Afua","Ama"];
+function giveName(){
+var j;
+for(j=0;j<maleNames.length; j++){
+if((getDayWeek(cC,yY,mM,dD)===j)&&(male===true)){
+console.log(maleNames[j]);
+}else if((getDayWeek(cC,yY,mM,dD)===j)&&(female===true)){
+console.log(femNames[j]);
+
+}
+}
+}
+giveName();
 
