@@ -10,20 +10,24 @@
 </head>
 <body>
   <div class="container">
-    <p>Akan Name Generator is an application that generates the day of the week you were born based on your birthday. Fill in 
-      your date of birth and click the generate button  to see what it does. Don't forget to check your gender. </p>
-    <div class="card">
+    <div class="jumbotron">
+        <p>Akan Name Generator is an application that generates the day of the week you were born based on your birthday. Fill in 
+            your date of birth and click the generate button  to see what it does. Don't forget to check your gender. </p>
+    </div>
+  
+    <div class="card text-center">
       <div class="card-body bg-info text center" >
-        <h2 class="text-center text-dak">AKAN NAME GENERATOR</h2>
+        <h2 class="text-center text-black">AKAN NAME GENERATOR</h2>
         <form action="" method="get">
-          <p>Select Date Of Birth:</p>
-          <input type="date" id= "birthd" name="birthd">
-          <p>Select Your Gender:</p>
-          <label for="male">Male</label>
-          <input type="radio" id= "male" name="gender" value ="Male" >
-          <label for="female">Female</label>
-          <input type="radio" id= "female" name="gender" value ="Female" >
-          <input type="button" id="button" value="generate" name="button">
+          Date:<input type="number" id="date"><br>
+          Month:<input type="number" id="month"><br>
+          Year:<input type="number" id="yearOfBirth"><br>
+          <select id="gender">
+            <option>Select your gender...</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select><br>
+          <input type="submit" value="Submit" id="submitButton" />
 
         </form>
 

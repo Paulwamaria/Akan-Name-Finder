@@ -1,54 +1,18 @@
-
-
-var year;
-var cC;//century
-var yY;//year
-var mM=9;//month
-var dD=11;//date
-var result;
-var dateEnterd;
-//A method to slice the yeaar from the date enterd
-myYear=parseInt((dateEnterd.toString).slice(0,4));
-mM=parseInt((dateEnterd.toString).slice(5,7));
-dD=parseInt((dateEnterd.toString).slice(8,10));
 //Create a function to collect data from the user
-
-document.getElementById("birthd").addEventListener("change", function() {
-  var dateEnterd = this.value;
-  window.alert(dateEnterd); //e.g. 2015-11-13
- return dateEnterd;
-});
-//a simple function to identify the checked  radio button
-//function maleCheck
-
-var male=document.getElementById("male");
-var female=document.getElementById("female");
-function maleCheck(){
-  if(masculine.checked){
+document.getElementById('theform').onsubmit = function findAkanName(){
+  var dD = document.getElementById('date').value;
+  var month = document.getElementById('month').value;
+  var yearOfBirth = document.getElementById('yearOfBirth').value;
+   var cC = yearOfBirth.slice(0,2);
+    var yY = yearOfBirth.slice(2,4);
+    var genders = document.getElementById("gender");
+  var gender = genders.options[genders.selectedIndex].text;
   
-    return true;
-  }else{
-    return false;
+  convertD();
+  
+  giveName();
+    
   }
-}
-maleCheck();
-
-//function femaleCheck
-function femaleCheck(){
-  if(feminine.checked){
-    return true;
-  }else{
-    return false;
-  }
-}
-femaleCheck();
-//A simple function to calculate the day of the week given a specific date
-function getDayWeek(cC,yY,mM,dD){
-var dayOfWeek= ( ( (cC/4) -2*cC-1) + ((5*yY/4) ) + ((26*(mM+1)/10)) + dD ) % 7;
-var result=Math.floor(dayOfWeek);
-return result;
-}
-
 cC=parseInt((year.toString()).slice(0,2));
 yY=parseInt((year.toString()).slice(2,4));
 //console.log(yY);
@@ -64,7 +28,7 @@ document.write(dayName[i]);
 }
 convertD();
 //A function to match day with Akan name
-
+ 
 var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 var femNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 function giveName(){
