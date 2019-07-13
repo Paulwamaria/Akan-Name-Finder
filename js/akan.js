@@ -1,13 +1,16 @@
 
 
-var year = 1995;
+var year;
 var cC;//century
 var yY;//year
 var mM=9;//month
 var dD=11;//date
 var result;
-//var dateEnterd;
-
+var dateEnterd;
+//A method to slice the yeaar from the date enterd
+myYear=parseInt((dateEnterd.toString).slice(0,4));
+mM=parseInt((dateEnterd.toString).slice(5,7));
+dD=parseInt((dateEnterd.toString).slice(8,10));
 //Create a function to collect data from the user
 
 document.getElementById("birthd").addEventListener("change", function() {
