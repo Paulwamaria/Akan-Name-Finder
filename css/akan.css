@@ -1,4 +1,12 @@
 .card{
+  height:500px;
   width:50%;
   font-size:22px;
+  margin:auto;
+}
+p{
+  font-size:22px;
+}
+body{
+  background:radial-gradient(circle, #000000, #0000ff); 
 }
