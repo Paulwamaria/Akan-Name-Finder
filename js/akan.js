@@ -55,9 +55,11 @@ function yourAkanName(){
   var gender = genders.options[genders.selectedIndex].text;
 
   if(gender==="Male"){
+    document.getElementById("fr").innerHTML= "Here are your results: "
     document.getElementById("f6").innerHTML= "You were born on " + dayName[ getDayWeek(cC,yY,mM,dD)];
     document.getElementById("f7").innerHTML= "Your Akan Name is " + maleNames[getDayWeek(cC,yY,mM,dD)];
   }else if (gender==="Female"){
+    document.getElementById("fr").innerHTML= "Here are your results: "
     document.getElementById("f6").innerHTML= "You were born on " + dayName[ getDayWeek(cC,yY,mM,dD)];
     document.getElementById("f7").innerHTML= "Your Akan Name is " + femaleNames[getDayWeek(cC,yY,mM,dD)];
   }
