@@ -17,13 +17,20 @@ form{
  margin-top:10px;
 }
 .navbar-brand{
+
+}
+a{
+  padding-left:15px;
+  padding-right:10px;
+}
+#logo{
+  width:40%;
+  height:auto;
+}
+.nav-a{
   margin-right:10px;
   width:100%;
   display:flex;
   justify-content: flex-end;
   padding-left:15px;
-}
-a{
-  padding-left:15px;
-  padding-right:10px;
 }
