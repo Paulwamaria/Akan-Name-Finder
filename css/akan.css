@@ -11,7 +11,8 @@ body{
   background:radial-gradient(circle, #000000, #0000ff); 
 }
 form{
-  padding: 15px 15px 15px 15px;
+  
+  padding: 20px 20px 20px 20px;
 }
 .padding{
  margin-top:10px;
@@ -24,7 +25,7 @@ a{
   padding-right:10px;
 }
 #logo{
-  width:40%;
+  width:50%;
   height:auto;
 }
 .nav-a{
@@ -33,4 +34,27 @@ a{
   display:flex;
   justify-content: flex-end;
   padding-left:15px;
+}
+#welc{
+  font-family:"Emilys candy, cursive";
+}
+.details{
+  margin-top:250px;
+}
+h1,h2{
+  font-style:bold;
+}
+h3{
+  font-family:"playball,cursive";
+}
+#f1,#f2,#f3,#f4,#f5,#f6,#f7{
+  color:white;
+}
+.card-footer{
+  margin-top:50px;
+  position:relative;
+  height:100%;
+}
+.card{
+  height:100%;
 }

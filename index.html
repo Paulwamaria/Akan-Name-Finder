@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/akan.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Emilys+Candy|Marck+Script|Metrophobic|Pinyon+Script|Playball|Rancho|Share&display=swap" rel="stylesheet">
   <title>Akan Name Finder</title>
 </head>
 <body>
@@ -22,38 +23,41 @@
  
     </div>
     <div class="jumbotron">
-      <h1>WELCOME TO EMRYON DEVELOPERS</h1>
+      <h1 id="welc" class="text-primary">WELCOME TO EMRYON DEVELOPERS</h1>
+      <h3 class="text-center">Your home of web apps</h3>
       
     </div>
     <div class="intro">
-        <p class="text-white">Akan Name Generator is an application that generates the day of the week you were born based on your birthday. Fill in 
+        <p class="text-white">Akan Name Generator is an application that generates the day of the week you were born based on your birthday and gives you a corresponding <i>Akan Name</i>. Fill in 
             your date of birth and click the generate button  to see what it does. Don't forget to check in your gender. </p>
     </div>
+    <h2 class="text-center text-white">Find Your Akan Name:-</h2>
   
     <div class="card text-center">
-      <div class="card-body bg-info text center" >
-        <h2 class="text-center text-black bg-gray-dark">AKAN NAME GENERATOR</h2>
-        <form action="#" id="myform">
-          Date:<input type="number" id="date" name="date" class="padding" value=""><br>
-         Month:<input type="number" id="month" name="month" class="padding" value=""><br>
-         Year:<input type="number" id="yearOfBirth" name="yearOfB" value="" class="padding"><br>
+      <div class="card-body bg-dark text center flex-wrap" >
+        <h2 class="text-center text-primary bg-gray-dark">AKAN NAME GENERATOR</h2>
+        <form action="#" id="myform" class="text-primary form-control-sm">
+          Enter Your Date Of Birth:<input type="number" id="date" name="date" class="padding" value=""><br>
+         Enter Your Month Of Birth:<input type="number" id="month" name="month" class="padding" value=""><br>
+         Enter Your Year Of Birth:<input type="number" id="yearOfBirth" name="yearOfB" value="" class="padding"><br>
           <select id="gender" class="padding">
             <option>Select your gender...</option>
             <option value="female">Female</option>
             <option value="male">Male</option>
           </select><br>
-          <input type="submit" value="Submit" id="submitButton" class="padding" onclick="check(); return false"/>
+          <input type="submit" value="Confirm" id="submitButton" class="padding" onclick="check(); return false"/>
           <input type="button" value="generate" id="generateButton" class="padding" onclick="yourAkanName(); convertD();return false"/>
 
         </form>
         
-        <div class=" card details">
-          <h2 id="fd"></h2>
+        <div class=" details">
+          <h2 id="fd" class="text-primary"></h2>
           <p id = "f1"></p>
           <p id = "f2"></p>
           <p id = "f3"></p>
           <p id = "f4"></p>
           <p id = "f5"></p>
+          <h2 id="fr" class="text-primary"></h2>
           <p id = "f6"></p>
           <p id = "f7"></p>
 
@@ -62,6 +66,11 @@
 
       </div>
 
+    </div>
+    <div class="card-footer bg-dark">
+      <a href="mailto:helloemryon@gmail.com"><strong>Email:</strong>helloemryon@gmail.com</a>
+      <a href="#">Copyright (c) 2019 Paulwamaria</a>
+      <a href="#"><strong>Phone:</strong>0780404626</a>
     </div>
     
   </div>
