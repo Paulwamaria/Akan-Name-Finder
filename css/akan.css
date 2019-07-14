@@ -10,3 +10,20 @@ p{
 body{
   background:radial-gradient(circle, #000000, #0000ff); 
 }
+form{
+  padding: 15px 15px 15px 15px;
+}
+.padding{
+ margin-top:10px;
+}
+.navbar-brand{
+  margin-right:10px;
+  width:100%;
+  display:flex;
+  justify-content: flex-end;
+  padding-left:15px;
+}
+a{
+  padding-left:15px;
+  padding-right:10px;
+}
