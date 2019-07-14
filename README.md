@@ -7,7 +7,7 @@ Akan Name Finder is a web application that outputs the Akan Name of a given user
 The application is developed by**Paul Kamau wamaria**, a student at **Moringa School**
 
 ##**set up**
-No set up instructions needed. Just follow the link and fill in the form. Click on the "confirm" button to confirm your details and then click on generate.
+No set up instructions needed. Just follow the liink and fill in the form.Click on the "confirm" button to confirm your details and then click on generate.
 https://paulwamaria.github.io/Akan-Name-Finder/
 
 ##**BDD**
