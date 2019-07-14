@@ -17,19 +17,29 @@
   
     <div class="card text-center">
       <div class="card-body bg-info text center" >
-        <h2 class="text-center text-black">AKAN NAME GENERATOR</h2>
-        <form action="" method="get">
-          Date:<input type="number" id="date"><br>
-          Month:<input type="number" id="month"><br>
-          Year:<input type="number" id="yearOfBirth"><br>
-          <select id="gender">
+        <h2 class="text-center text-black bg-gray-dark">AKAN NAME GENERATOR</h2>
+        <form action="#" id="myform">
+          Date:<input type="number" id="date" name="date" class="padding" value=""><br>
+         Month:<input type="number" id="month" name="month" class="padding" ><br>
+         Year:<input type="number" id="yearOfBirth" name="yearOfB" class="padding"><br>
+          <select id="gender" class="padding">
             <option>Select your gender...</option>
             <option value="female">Female</option>
             <option value="male">Male</option>
           </select><br>
-          <input type="submit" value="Submit" id="submitButton" />
+          <input type="submit" value="Submit" id="submitButton" class="padding" onclick="check(); return false"/>
 
         </form>
+        <div class="details">
+          <h2 id="fd"></h2>
+          <p id = "f1"></p>
+          <p id = "f2"></p>
+          <p id = "f3"></p>
+          <p id = "f4"></p>
+          <p id = "f5"></p>
+
+
+        </div>
 
       </div>
 
