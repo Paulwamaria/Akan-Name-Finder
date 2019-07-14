@@ -37,15 +37,15 @@
       <div class="card-body bg-dark text center flex-wrap" >
         <h2 class="text-center text-primary bg-gray-dark">AKAN NAME GENERATOR</h2>
         <form action="#" id="myform" class="text-primary form-control-sm">
-          Enter Your Date Of Birth:<input type="number" id="date" name="date" class="padding" value=""><br>
-         Enter Your Month Of Birth:<input type="number" id="month" name="month" class="padding" value=""><br>
-         Enter Your Year Of Birth:<input type="number" id="yearOfBirth" name="yearOfB" value="" class="padding"><br>
+          Enter Your Date Of Birth:<input type="number" id="date" name="date" class="padding" value="" min="1" max="31" required><br>
+         Enter Your Month Of Birth:<input type="number" id="month" name="month" class="padding" value="" min="1" max="12" required><br>
+         Enter Your Year Of Birth:<input type="number" id="yearOfBirth" name="yearOfB" value="" class="padding" min="1" max="2030" required><br>
           <select id="gender" class="padding">
             <option>Select your gender...</option>
             <option value="female">Female</option>
             <option value="male">Male</option>
           </select><br>
-          <input type="submit" value="Confirm" id="submitButton" class="padding" onclick="check(); return false"/>
+          <input type="submit" value="Confirm" id="submitButton" class="padding" onclick="check(); validateF(); return false"/>
           <input type="button" value="generate" id="generateButton" class="padding" onclick="yourAkanName(); convertD();return false"/>
 
         </form>
@@ -57,6 +57,7 @@
           <p id = "f3"></p>
           <p id = "f4"></p>
           <p id = "f5"></p>
+          <h2 id="fg" class="text-primary"></h2>
           <h2 id="fr" class="text-primary"></h2>
           <p id = "f6"></p>
           <p id = "f7"></p>

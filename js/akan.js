@@ -11,17 +11,32 @@ var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 var genders = document.getElementById("gender");
 var gender = genders.options[genders.selectedIndex].text;
 
-
+//A function to validate form
 
 
 //collect data from the form and output it
+function validateF(){
+  if( document.getElementById("date").value===""){
+    alert("You must enter a value");
+  }else if(document.getElementById("month").value===""){
+    alert("You must enter a value");
+  }else if(document.getElementById("yearOfBirth").value=="")
+  {
+    alert("You must enter a value");
+  }else if(document.getElementById("gender").options[document.getElementById("gender").selectedIndex].text===""){
+    alert("You must choose your gender");
+  }else{
+    return false;
+  }
+}
+
 function check(){
   document.getElementById("fd").innerHTML= "Here are your details: "
   document.getElementById("f1").innerHTML= "You were born on date " + document.getElementById("date").value;
   document.getElementById("f2").innerHTML= "You were born on this month " + document.getElementById("month").value;
   document.getElementById("f3").innerHTML= "You were born on this year " + document.getElementById("yearOfBirth").value;
   document.getElementById("f4").innerHTML= "Your gender is " + document.getElementById("gender").options[document.getElementById("gender").selectedIndex].text;
-  
+  document.getElementById("fg").innerHTML= "Click the Generate button to see your Akan name: "
 }
 //A function to find akan name
 
