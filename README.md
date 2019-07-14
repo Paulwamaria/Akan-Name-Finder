@@ -4,7 +4,7 @@
 Akan Name Finder is a web application that outputs the Akan Name of a given user depending on their gender and their date of birth. The user is required to fill in their date of birth and choose their gender and then submit the form. The application then  calculates the day of the week they were born and matches it with the corresponding Akan name depending on the gender. The application then  outputs the Akan Name to the user  with a personalized message.
 
 ##**Developer**
-The application is developed **Paul Kamau wamaria**, a student at **Moringa School**
+The application is developed by**Paul Kamau wamaria**, a student at **Moringa School**
 
 ##**set up**
 No set up instructions needed. Just follow the liink and fill in the form.
