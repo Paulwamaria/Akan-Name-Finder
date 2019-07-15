@@ -16,14 +16,14 @@ var gender = genders.options[genders.selectedIndex].text;
 
 //collect data from the form and output it
 function validateF(){
-  if( document.getElementById("date").value===""){
-    alert("You must enter a value");
-  }else if(document.getElementById("month").value===""){
-    alert("You must enter a value");
-  }else if(document.getElementById("yearOfBirth").value=="")
+  if( (document.getElementById("date").value==="")||(document.getElementById("date").value===0)||(document.getElementById("date").value>31)){
+    alert("You must enter a value between 1 and 31 for date");
+  }else if( (document.getElementById("month").value==="")||(document.getElementById("month").value===0)||(document.getElementById("date").value>12)){
+    alert("You must enter a value between 1 and 12 for month");
+  }else if( (document.getElementById("yearOfBirth").value==="")||(document.getElementById("yearOfBirth").value<1890)||(document.getElementById("yearOfBirth").value>2030))
   {
-    alert("You must enter a value");
-  }else if(document.getElementById("gender").options[document.getElementById("gender").selectedIndex].text===""){
+    alert("You must enter a value between 1890 and 2030 for your year of birth");
+  }else if((gender!=="Male")||(gender!=="Female")){
     alert("You must choose your gender");
   }else{
     return false;
